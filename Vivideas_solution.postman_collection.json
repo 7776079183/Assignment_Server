@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "318744fa-c2c9-4f20-94d2-61adad398ca1",
+		"name": "Vivideas_solution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\":\"kalevilas18@gmail.com\",\n    \"password\":\"12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku_id",
+							"value": "test_id5",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test_name",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"value": "fff",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "test_brand",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "test_cat",
+							"type": "text"
+						},
+						{
+							"key": "batch_no",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "mfg_date",
+							"value": "01-05-2019",
+							"type": "text"
+						},
+						{
+							"key": "exp_date",
+							"value": "01-05-2020",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "product_1",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "B1",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "cat2",
+							"type": "text"
+						},
+						{
+							"key": "batch_no",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "mfg_date",
+							"value": "01-08-2020",
+							"type": "text"
+						},
+						{
+							"key": "exp_date",
+							"value": "01-08-2021",
+							"type": "text"
+						},
+						{
+							"key": "_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/vilas/Downloads/Virat-Kohli.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/update-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"update-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/delete-product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"delete-product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
